@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="26dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-139dp">
+
+            <ImageView
+                android:id="@+id/imageAnasayfa"
+                android:layout_width="match_parent"
+                android:layout_height="501dp"
+                app:srcCompat="@drawable/anaekranresmi" />
+
+            <Button
+                android:id="@+id/btnGiris"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:autoText="false"
+                android:background="#DA3333"
+                android:ellipsize="middle"
+                android:onClick="Giris"
+                android:text="Giriş Yap"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnKayitOl"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:autoText="false"
+                android:background="#DA3333"
+                android:ellipsize="middle"
+                android:onClick="Kayit"
+                android:text="Kayıt Ol"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageAnasayfa"
+        android:layout_width="match_parent"
+        android:layout_height="501dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGiris"
+        app:srcCompat="@drawable/anaekranresmi"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:autoText="false"
+        android:background="#DA3333"
+        android:ellipsize="middle"
+        android:onClick="Giris"
+        android:text="@string/giri_yap"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnKayitOl"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="#DA3333"
+        android:ellipsize="middle"
+        android:onClick="Kayit"
+        android:text="@string/kay_t_ol"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        tools:layout_editor_absoluteX="45dp" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnasayfaActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/consRandevuAl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RandevuAl"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <ImageView
+            android:id="@+id/imgRandevuAl"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRandevuAl"
+            app:srcCompat="@drawable/randevu"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/txtRandevuAl"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:background="#39853A"
+            android:text="                                           RANDEVU AL"
+            android:textColor="#FCFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/imgRandevuAl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/consGecmisRandevu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="GecmisRandevuGoruntule"
+        app:layout_constraintTop_toBottomOf="@+id/consRandevuAl">
+
+        <TextView
+            android:id="@+id/txtRandevuGecmisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CE9B1A"
+            android:text="                                            RANDEVU GEÇMİŞİ"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgGecmis"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRandevuGecmisi"
+            app:srcCompat="@drawable/randevu_gecmisi" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/consProfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="ProfilGoruntule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consGecmisRandevu"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <ImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/profil"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/txtProfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autoText="false"
+            android:background="#F8000000"
+            android:text="                                              PROFİL"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/imgProfil"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

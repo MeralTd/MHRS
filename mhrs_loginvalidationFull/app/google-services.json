@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "262464115678",
+    "firebase_url": "https://mhrsloginvalidationfull.firebaseio.com",
+    "project_id": "mhrsloginvalidationfull",
+    "storage_bucket": "mhrsloginvalidationfull.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262464115678:android:23d423f2f57e242b",
+        "android_client_info": {
+          "package_name": "com.example.mhrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262464115678-nsipa99fdb32p43ab8nqcmi48u499dh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mhrs",
+            "certificate_hash": "0ecb2a9bd8c5122a366469b840c8bdb39cacea58"
+          }
+        },
+        {
+          "client_id": "262464115678-58ou44pjlol96v0bkd54fuqacf7evh2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDczqh8P5F7YDLeNAnIm7ygbRNyT2q316Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262464115678-58ou44pjlol96v0bkd54fuqacf7evh2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
